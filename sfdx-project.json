@@ -1,12 +1,20 @@
 {
   "packageDirectories": [
     {
+      "versionName": "v1",
+      "versionNumber": "1.0.0.NEXT",
       "path": "force-app",
-      "default": true
+      "default": true,
+      "package": "LivyMobile",
+      "versionDescription": ""
     }
   ],
-  "name": "LivyMobileSF",
-  "namespace": "",
+  "name": "LivyMobile",
+  "namespace": "livymobile",
   "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "66.0"
+  "sourceApiVersion": "66.0",
+  "packageAliases": {
+    "LivyMobile": "0Hod100000008jxCAA",
+    "LivyMobile@1.0.0-1": "04td10000004g8jAAA"
+  }
 }
