@@ -22,10 +22,12 @@ global class HelloService extends ResourceHandler {
     }
 
     global virtual HelloGetResponse get(HelloGetRequest request) {
-        throw new ServiceException(405, 'Method not allowed', 'METHOD_NOT_ALLOWED');
+        String name = String.isNotBlank(request.name) ? request.name : 'World';
+        return new HelloGetResponse('Hello, ' + name + '!');
     }
 
     global virtual HelloPostResponse post(HelloPostRequest request) {
-        throw new ServiceException(405, 'Method not allowed', 'METHOD_NOT_ALLOWED');
+        String name = String.isNotBlank(request.name) ? request.name : 'World';
+        return new HelloPostResponse('Hello, ' + name + '!');
     }
 }
