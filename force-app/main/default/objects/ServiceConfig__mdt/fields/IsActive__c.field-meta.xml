@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsActive__c</fullName>
+    <description>When false, the router treats this resource as unregistered and returns 404.</description>
+    <defaultValue>true</defaultValue>
+    <label>Is Active</label>
+    <required>false</required>
+    <type>Checkbox</type>
+</CustomField>
